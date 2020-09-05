@@ -3,10 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Main Page</title>
+    <script src="/js/jquery.js"></script>
+    <script src="https://kit.fontawesome.com/e49e8890e8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
+
     
+    <h1 id="ip" style="display: none;"><%- ip %></h1>
+
+    <div class="topbar"><img src="/imgs/logo.png" alt=""></div>
+
+    <% if (ip != 0) { %>
+
+    <div class="info"></div>
+
+    <% } else { %>
+
+        <div class="error">
+            IP has not been set
+        </div>
+
+    <% } %>
+
+    <div class="bottomBar">
+        <a href="/">
+            <i class="fas fa-cogs selected"></i>
+        </a>
+        <a href="/navigate">
+            <i class="fas fa-compass"></i>
+        </a>
+    </div>
+    
+    <script src="/js/main.js"></script>
 </body>
 </html>
