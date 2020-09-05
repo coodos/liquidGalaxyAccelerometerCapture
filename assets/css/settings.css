@@ -33,6 +33,11 @@ body {
     bottom: 0;
 }
 
+.nav {
+    width: 50%;
+    margin-left: 25%;
+}
+
 input[type=text] {
     width: 90%;
     margin-left: 3%;
@@ -55,7 +60,11 @@ input[type=submit] {
 
 .bottomBar i {
     margin-top: 2vh;
-    margin: 2vh 16%;
     color: #3d3d3d;
     font-size: 6vh;
+    float: left;
+}
+
+#nav {
+    float: right;
 }
